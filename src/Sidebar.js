@@ -16,11 +16,14 @@ function Sidebar() {
     </div>
   )
 
+  console.log(user);
+  console.log(user.profileUrl);
+
   return (
     <div className="sidebar">
      <div className="sidebar__top">
         <img src="https://th.bing.com/th/id/OIP.DogrtaSnduybcwoNk8lEaAHaE8?pid=ImgDet&rs=1" alt="" />
-        <Avatar src={user.photoUrl} className="sidebar__avatar">{user.displayName[0]}</Avatar>
+        <Avatar src={user.profileUrl} className="sidebar__avatar">{user.displayName[0]}</Avatar>
         <h2>{user.displayName}</h2>
         <h4>{user.email}</h4>
      </div>

@@ -23,7 +23,9 @@ function Login() {
           displayName: userAuth.user.displayName,
           profileUrl: userAuth.user.photoURL,
         }));
+        console.log(userAuth.user);
       }
+    
     ).catch((error) => alert(error));
   };
 
@@ -48,6 +50,7 @@ function Login() {
           })
         );
       });
+      console.log(userAuth.user);
     }).catch((error) => alert(error));
   };
 
